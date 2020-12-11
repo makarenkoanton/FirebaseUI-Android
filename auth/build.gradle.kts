@@ -48,6 +48,4 @@ dependencies {
     testImplementation(Config.Libs.Test.core)
     testImplementation(Config.Libs.Test.robolectric)
     testImplementation(Config.Libs.Provider.facebook)
-
-    debugImplementation(project(":internal:lintchecks"))
 }
