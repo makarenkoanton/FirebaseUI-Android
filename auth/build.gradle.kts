@@ -7,6 +7,10 @@ android {
             consumerProguardFiles("auth-proguard.pro")
         }
     }
+
+    lintOptions {
+        isAbortOnError = false
+    }
 }
 
 dependencies {
