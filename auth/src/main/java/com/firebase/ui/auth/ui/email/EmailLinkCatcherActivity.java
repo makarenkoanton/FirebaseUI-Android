@@ -99,7 +99,7 @@ public class EmailLinkCatcherActivity extends InvisibleActivityBase {
     }
 
     private AlertDialog buildAlertDialog(final int errorCode) {
-        AlertDialog.Builder alertDialog = new AlertDialog.Builder(this);
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(this, getFlowParams().themeId);
 
         String titleText;
         String messageText;
