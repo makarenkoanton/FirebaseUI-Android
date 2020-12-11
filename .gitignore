@@ -11,3 +11,10 @@ google-services.json
 crashlytics-build.properties
 auth/src/main/res/values/com_crashlytics_export_strings.xml
 *.log
+
+###> symfony/webpack-encore-bundle ###
+/node_modules/
+!/public/build/
+!/public/build/*
+npm-debug.log
+yarn-error.log
