@@ -7,22 +7,6 @@ android {
             consumerProguardFiles("auth-proguard.pro")
         }
     }
-
-    lintOptions {
-        disable("UnusedQuantity")
-        disable("UnknownNullness")  // TODO fix in future PR
-        disable("TypographyQuotes") // Straight versus directional quotes
-        disable("DuplicateStrings")
-        disable("LocaleFolder")
-        disable("IconLocation")
-        disable("VectorPath")
-    }
-
-    testOptions {
-        unitTests(closureOf<TestOptions.UnitTestOptions> {
-            isIncludeAndroidResources = true
-        })
-    }
 }
 
 dependencies {
@@ -41,11 +25,4 @@ dependencies {
     compileOnly(Config.Libs.Provider.facebook)
     implementation(Config.Libs.Androidx.legacySupportv4) // Needed to override deps
     implementation(Config.Libs.Androidx.cardView) // Needed to override Facebook
-
-    testImplementation(Config.Libs.Test.junit)
-    testImplementation(Config.Libs.Test.truth)
-    testImplementation(Config.Libs.Test.mockito)
-    testImplementation(Config.Libs.Test.core)
-    testImplementation(Config.Libs.Test.robolectric)
-    testImplementation(Config.Libs.Provider.facebook)
 }
