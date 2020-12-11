@@ -22,5 +22,5 @@ include(
 
         ":lint",
 
-        ":proguard-tests", ":internal:lint", ":internal:lintchecks"
+        ":proguard-tests"
 )
