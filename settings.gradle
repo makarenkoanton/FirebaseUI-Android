@@ -13,14 +13,8 @@ gradleEnterprise {
 rootProject.buildFileName = 'build.gradle.kts'
 
 include(
-        ":app", ":library",
+
 
         ":auth",
-        ":common", ":firestore", ":database",
-        ":storage",
-
-
-        ":lint",
-
-        ":proguard-tests"
+        ":common"
 )
